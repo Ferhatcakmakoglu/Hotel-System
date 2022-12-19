@@ -26,6 +26,7 @@ public:
 		readUrl.close();
 		cout << dosyaTuru << " = " << toplayici << endl;
 	}
+
 	void readFile2(string url, string dosyaTuru = "")
 	{
 		int toplayici = 0;
@@ -165,7 +166,6 @@ void Muhasebe::islemGecmisineYaz(string url, string islem)
 	write << islem << endl;
 	write.close();
 }
-
 
 
 #endif // !MUHASEBE_H

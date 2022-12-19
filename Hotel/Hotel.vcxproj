@@ -130,11 +130,13 @@
     <ClCompile Include="Kupon.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Muhasebe.cpp" />
+    <ClCompile Include="OdaOlustur.cpp" />
     <ClCompile Include="Turizm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Kupon.h" />
     <ClInclude Include="Muhasebe.h" />
+    <ClInclude Include="OdaOlustur.h" />
     <ClInclude Include="Turizm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -2,10 +2,19 @@
 #include "Turizm.h"
 #include "Kupon.h"
 #include "Muhasebe.h"
+#include "OdaOlustur.h"
 using namespace std;
 
 int main()
 {
+	/*
+		//DEFAULT 100 ODA OLUSTURULDU VE BÝRDAHA CALISMAMAK ÜZRE KAPATILDI
+
+		OdaOlustur* o = new OdaOlustur();
+		o->odaTanimlama();
+
+	*/
+
 	Kupon* kupon = new Kupon();
 	Turizm* turizm = new Turizm();
 	Muhasebe* muhasebe = new Muhasebe();
