@@ -1,0 +1,2 @@
+EK GELIR EKLENDI: [ deneme = 1245 ]
+EK GIDER EKLENDI: [ yemek = 1478 ]
