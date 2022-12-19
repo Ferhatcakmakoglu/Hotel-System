@@ -1,4 +1,8 @@
 #include<iostream>
+#ifndef ODAOLUSTUR_H
+#define ODAOLUSTUR_H
+
+
 #include <string>
 #include<fstream>
 /*
@@ -37,7 +41,6 @@ public:
 
 class OdaOlustur : public AbsOdaOlustur , Oda
 {
-	//string dosyaUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Odalar\\";
 public:
 	
 	int vipOdaSayisi = 10;
@@ -120,13 +123,14 @@ public:
 				+ "\nARA TEMIZLIK:" + to_string((o + i)->araTemizlik)
 				+ "\n---------------------------\n";
 			writeToFile(txtAdi, data); //dosyaya yazildi
+			writeToTumOdalar(txtAdi); //tumOdalar.txt ye yazildi
 		}
 	}
 
 	//TXT DOSYASÝ AÇMA ÝÞLEMÝ
 	void createFile(string fileName)
 	{
-		string dosyaUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Odalar\\" +fileName +".txt";
+		string dosyaUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Oda\\tumOdalar\\" +fileName +".txt";
 		ofstream file(dosyaUrl);
 		file.close();
 		cout << "Dosya olustu" << endl;
@@ -136,10 +140,19 @@ public:
 	//DOSYA YAZMA ÝÞLEMÝ
 	void writeToFile(string fileName, string data)
 	{
-		string dosyaUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Odalar\\" + fileName + ".txt";
+		string dosyaUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Oda\\tumOdalar\\" + fileName + ".txt";
 		ofstream file(dosyaUrl);
 		file << data;
 		file.close();
 	}
+
+	void writeToTumOdalar( string data)
+	{
+		string tumOdalarTxtUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Oda\\tumOdalar.txt";
+		ofstream file(tumOdalarTxtUrl,ios::app);
+		file << data << endl;
+		file.close();
+	}
 };
 
+#endif // !ODAOLUSTUR_H

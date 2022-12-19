@@ -1,9 +1,0 @@
----------------------------
-ODA NO:A-21
-ODA TURU:A
-ODA KAPASITE:2
-GUNLUK FIYAT:3000
-DOLULUK :0
-TEMIZLIK:1
-ARA TEMIZLIK:0
----------------------------

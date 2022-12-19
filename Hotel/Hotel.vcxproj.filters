@@ -30,6 +30,12 @@
     <ClCompile Include="OdaOlustur.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="OdaIslem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Turizm.h">
@@ -42,6 +48,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="OdaOlustur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OdaIslem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

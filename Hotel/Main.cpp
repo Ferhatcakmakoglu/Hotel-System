@@ -2,7 +2,9 @@
 #include "Turizm.h"
 #include "Kupon.h"
 #include "Muhasebe.h"
-#include "OdaOlustur.h"
+//#include "OdaOlustur.h"
+#include "OdaIslem.h"
+#include "Node.h"
 using namespace std;
 
 int main()
@@ -12,12 +14,14 @@ int main()
 
 		OdaOlustur* o = new OdaOlustur();
 		o->odaTanimlama();
-
 	*/
+	
+
 
 	Kupon* kupon = new Kupon();
 	Turizm* turizm = new Turizm();
 	Muhasebe* muhasebe = new Muhasebe();
+	OdaIslem* odaIslem = new OdaIslem();
 	int islem;
 	int cd;
 	cout << "~ " << turizm->getHotelAdi() << " ~" << endl;
@@ -26,7 +30,8 @@ int main()
 		cout << "#1 Rezervasyon Bolumu\n"
 			<< "#2 Muhasebe Bolumu\n"
 			<< "#3 Islem Gecmisi\n" 
-			<< "#4 Kupon Islemleri" << endl;
+			<< "#4 Kupon Islemleri\n" 
+			<< "#5 Oda Islemleri" << endl;
 		cout << "Yapmak istediginiz islemi seciniz: ";
 		cin >> islem;
 		switch(islem)
@@ -42,6 +47,9 @@ int main()
 			break;
 		case 4:
 			kupon->kuponIslem();
+			break;
+		case 5:
+			odaIslem->odaIslemMenu();
 			break;
 		default:
 			cout << "HATALI TUSLAMA" << endl;

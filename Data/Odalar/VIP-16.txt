@@ -1,9 +1,0 @@
----------------------------
-ODA NO:VIP-16
-ODA TURU:VIP
-ODA KAPASITE:1
-GUNLUK FIYAT:15000
-DOLULUK :0
-TEMIZLIK:1
-ARA TEMIZLIK:0
----------------------------

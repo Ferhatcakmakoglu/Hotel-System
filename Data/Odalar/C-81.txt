@@ -1,9 +1,0 @@
----------------------------
-ODA NO:C-81
-ODA TURU:C
-ODA KAPASITE:5
-GUNLUK FIYAT:5000
-DOLULUK :0
-TEMIZLIK:1
-ARA TEMIZLIK:0
----------------------------

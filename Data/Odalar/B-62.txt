@@ -1,9 +1,0 @@
----------------------------
-ODA NO:B-62
-ODA TURU:B
-ODA KAPASITE:3
-GUNLUK FIYAT:4000
-DOLULUK :0
-TEMIZLIK:1
-ARA TEMIZLIK:0
----------------------------

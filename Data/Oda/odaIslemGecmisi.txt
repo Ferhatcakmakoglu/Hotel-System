@@ -1,0 +1,2 @@
+Sisteme [ FERHAT-1 ] adli oda eklenmistir
+Sistemden C-109 Odasi Silinmistir
