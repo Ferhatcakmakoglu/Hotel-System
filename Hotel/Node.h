@@ -34,27 +34,6 @@ public:
 			new_node->next = NULL;
 			temp->next = new_node;
 		}
-		//if(head == NULL)
-		//{
-		//	head->data = myData;
-		//	head->next = NULL;
-		//}
-		//else
-		//{
-		//	Node* temp = head;
-		//	Node* newData = new Node();
-		//	
-		//	while(temp->next != NULL)
-		//	{
-		//		temp = temp->next;
-		//	}
-		//	//datayi tanimladik
-		//	newData->data = myData;
-		//	newData->next = NULL;
-
-		//	//dizinin sonuna new data eklendi
-		//	temp->next = newData;
-		//}
 	}
 
 	void print(Node* head)

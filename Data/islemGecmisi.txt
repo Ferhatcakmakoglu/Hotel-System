@@ -25,3 +25,5 @@ EK GIDER EKLENDI: [ yemek = 1478 ]
 Sisteme FERHAT Kupon Eklendi. TUTAR: %61
 Sisteme [ FERHAT-1 ] adli oda eklenmistir
 Sistemden C-109 Odasi Silinmistir
+[C-108] NO'LU ODA REZERVE EDILDI
+[C-107] NO'LU ODA REZERVE EDILDI

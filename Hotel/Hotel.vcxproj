@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="IslemGecmisi.cpp" />
     <ClCompile Include="Kupon.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Muhasebe.cpp" />
@@ -136,6 +137,7 @@
     <ClCompile Include="Turizm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="IslemGecmisi.h" />
     <ClInclude Include="Kupon.h" />
     <ClInclude Include="Muhasebe.h" />
     <ClInclude Include="Node.h" />

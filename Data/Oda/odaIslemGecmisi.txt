@@ -1,2 +1,4 @@
 Sisteme [ FERHAT-1 ] adli oda eklenmistir
 Sistemden C-109 Odasi Silinmistir
+[C-108] NO'LU ODA REZERVE EDILDI
+[C-107] NO'LU ODA REZERVE EDILDI

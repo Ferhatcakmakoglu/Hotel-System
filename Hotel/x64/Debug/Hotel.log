@@ -1,4 +1,6 @@
-﻿  Main.cpp
-  OdaIslem.cpp
+﻿  IslemGecmisi.cpp
+  Main.cpp
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(248,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Turizm.h(128,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   Generating Code...
   Hotel.vcxproj -> C:\Users\Ferhat\source\repos\c\Hotel\x64\Debug\Hotel.exe

@@ -5,6 +5,7 @@
 //#include "OdaOlustur.h"
 #include "OdaIslem.h"
 #include "Node.h"
+#include "IslemGecmisi.h"
 using namespace std;
 
 int main()
@@ -22,6 +23,9 @@ int main()
 	Turizm* turizm = new Turizm();
 	Muhasebe* muhasebe = new Muhasebe();
 	OdaIslem* odaIslem = new OdaIslem();
+	IslemGecmisi* islemGecmisi = new IslemGecmisi();
+	string genelIslemGecmisiUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\islemGecmisi.txt";
+
 	int islem;
 	int cd;
 	cout << "~ " << turizm->getHotelAdi() << " ~" << endl;
@@ -43,7 +47,7 @@ int main()
 			muhasebe->muhasebeIslem();
 			break;
 		case 3:
-			//Ýslem Gecmisi
+			islemGecmisi->islemGecmisiYazdir(genelIslemGecmisiUrl);
 			break;
 		case 4:
 			kupon->kuponIslem();

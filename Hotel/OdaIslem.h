@@ -73,6 +73,9 @@ public:
 	inline void bosOdaListele() override;
 	inline void tumOdalariListele() override;
 	inline void dosyayaYaz(string,string);
+	inline void dosyaOku(string);
+	inline string getOdaAdi(int);
+	inline int getOdaDoluluk(string);
 	void setToplamOdaSayisi()
 	{
 		string line;
@@ -169,13 +172,87 @@ void OdaIslem::odaSil()
 
 void OdaIslem::doluOdaListele()
 {
-
+	string odalarUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Oda\\tumOdalar\\";
+	string oda;
+	//ifstream read();
+	int count = 1;
+	for(int i=0;i<toplamOdaSayisi;i++)
+	{
+		oda = getOdaAdi(i); //tumOdalar.txt den ilgili odanin adini aldýk
+		odalarUrl.append(oda + ".txt");
+		if(getOdaDoluluk(oda) == 1) // aldýgýmýz odayý kontrol ediyoruz (dolu mu bos mu diye)
+		{
+			cout << "\n#" << count << endl;
+			dosyaOku(oda); // dolu odayi yazdirdik
+			count++;
+		}
+	}
+	cout << "\nTOPLAM " << --count << " ODA DOLU" << endl;
 }
 
 
 void OdaIslem::bosOdaListele()
 {
+	string odalarUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Oda\\tumOdalar\\";
+	string oda;
+	//ifstream read();
+	int count = 1;
+	for (int i = 0; i < toplamOdaSayisi; i++)
+	{
+		oda = getOdaAdi(i); //tumOdalar.txt den ilgili odanin adini aldýk
+		odalarUrl.append(oda + ".txt");
+		if (getOdaDoluluk(oda) == 0) // aldýgýmýz odayý kontrol ediyoruz (dolu mu bos mu diye)
+		{
+			cout << "\n#" << count << endl;
+			dosyaOku(oda); // bos odayi yazdirdik
+			count++;
+		}
+	}
+	cout << "\nTOPLAM " << --count << " ODA BOS" << endl;
+}
 
+// tumOdalar.txt den index sayesinde oda isimlerine ulasýyoruz
+// Bu isimleri odalardaki txt lere ulasmak icin kullaniyoruz
+string OdaIslem::getOdaAdi(int i)
+{
+	int count = 0;
+	string url = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Oda\\tumOdalar.txt";
+	string line;
+	ifstream read(url);
+	string oda;
+	while(getline(read,line))
+	{
+		if(count == i)
+		{
+			oda = line;
+			read.close();
+			break;
+		}
+		count++;
+	}
+	return oda;
+}
+
+//Her bir odayi dolasip Dolu olanlar için 1, olmayanlar için 0 degeri verecek
+int OdaIslem::getOdaDoluluk(string fileName)
+{
+	int i = 0,index;
+	string odalarUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Oda\\tumOdalar\\"+fileName+".txt";
+	string line,arananData;
+	ifstream read(odalarUrl);
+	int doluluk = 0;
+	while(getline(read,line))
+	{
+		if (i == 5) // 5 olmasinin sebebi odaNo.txt lerde 5. indis doluluk boslugun indisi
+		{
+			index = line.find(":");
+			arananData = line.substr(index + 1);
+			doluluk = stoi(arananData);
+		}
+		i++;
+	}
+	read.close();
+	return doluluk;
 }
 
 void OdaIslem::tumOdalariListele()
@@ -199,6 +276,18 @@ void OdaIslem::dosyayaYaz(string url, string data)
 	ofstream write(url, ios::app);
 	write << data << endl;
 	write.close();
+}
+
+void OdaIslem::dosyaOku(string fileName)
+{
+	string odalarUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Oda\\tumOdalar\\" + fileName + ".txt";
+	ifstream read(odalarUrl);
+	string line;
+	while(getline(read,line))
+	{
+		cout << line << endl;
+	}
+	read.close();
 }
 
 #endif // !ODAISLEM_H
