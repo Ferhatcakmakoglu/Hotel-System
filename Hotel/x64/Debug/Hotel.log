@@ -1,18 +1,32 @@
-﻿  Kupon.cpp
-C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(248,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+﻿  Hizmet.cpp
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(295,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Temizlik.h(67,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Temizlik.h(132,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  KisiIclal.cpp
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(295,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Kupon.cpp
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(295,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Turizm.h(102,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Turizm.h(131,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Turizm.h(165,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   Main.cpp
-C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(248,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(295,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Turizm.h(102,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Turizm.h(131,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Turizm.h(165,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Temizlik.h(67,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Temizlik.h(132,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Personel.h(102,45): warning C4101: 'mesaiSecim': unreferenced local variable
+  OdaIslem.cpp
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(295,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  OdaServisi.cpp
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(295,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Temizlik.cpp
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(295,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Temizlik.h(67,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Temizlik.h(132,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   Turizm.cpp
-C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(248,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Ferhat\source\repos\c\Hotel\Hotel\OdaIslem.h(295,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Turizm.h(102,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Turizm.h(131,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Ferhat\source\repos\c\Hotel\Hotel\Turizm.h(165,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data

@@ -57,7 +57,10 @@
     <ClCompile Include="Personel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Kisi.cpp">
+    <ClCompile Include="KisiIclal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExceptionHandling.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -101,7 +104,10 @@
     <ClInclude Include="Personel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Kisi.h">
+    <ClInclude Include="KisiIclal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExceptionHandling.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

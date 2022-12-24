@@ -1,6 +1,0 @@
-ferhatcumartesi cakmakoglu
---------------------------
-PersonelNo:6167
-PersonelYas:20
-PersonelMesaiUcreti:200
---------------------------

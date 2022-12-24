@@ -69,3 +69,8 @@ ferho ADLI PERSONELE --> Mesai Saati: 10 Ucreti: 75 Verilmistir
 [B-77] NO'LU ODA REZERVE EDILDI
 [A-28] NO'LU ODA REZERVE EDILDI
 [C-104] NO'LU ODA REZERVE EDILDI
+C-108 Hotelden Cikis Yapti
+Sisteme [ VIP-61 ] adli oda eklenmistir
+Sisteme [ VIP-67 ] adli oda eklenmistir
+Sistemden VIP-67 Odasi Silinmistir
+Sistemden VIP-61 Odasi Silinmistir

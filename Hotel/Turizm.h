@@ -7,7 +7,7 @@
 #include "Kupon.h"
 #include "OdaIslem.h"
 #include "Node.h"
-#include "Kisi.h"
+#include "KisiIclal.h"
 using namespace std;
 
 class AbsTurizm {
@@ -61,7 +61,7 @@ void Turizm::kuponIleRezervasyonIslemMenusu()
 {
 	OdaIslem* odaIslem = new OdaIslem();
 	Kupon* kupon = new Kupon();
-	Kisi* kisi = new Kisi();
+	KisiIclal* kisi = new KisiIclal();
 
 	int kuponSayisi = kupon->kuponSayisi;
 	string* kuponlar = new string[kuponSayisi];
@@ -121,7 +121,7 @@ void Turizm::kuponIleRezervasyonIslemMenusu()
 void Turizm::kuponsuzRezervasyonIslemMenusu()
 {
 	OdaIslem* odaIslem = new OdaIslem();
-	Kisi* kisi = new Kisi();
+	KisiIclal* kisi = new KisiIclal();
 
 	odaIslem->bosOdaListele(); //bos odalar listelendi
 	string odaNo;

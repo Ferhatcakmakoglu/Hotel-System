@@ -8,6 +8,7 @@
 #include "IslemGecmisi.h"
 #include "Hizmet.h"
 #include "Personel.h"
+#include "KisiIclal.h"
 using namespace std;
 
 int main()
@@ -28,7 +29,8 @@ int main()
 	IslemGecmisi* islemGecmisi = new IslemGecmisi();
 	Hizmet* hizmet = new Hizmet();
 	Personel* personel = new Personel();
-	
+	KisiIclal* kisi = new KisiIclal();
+
 	string genelIslemGecmisiUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\islemGecmisi.txt";
 
 	int islem;
@@ -42,7 +44,8 @@ int main()
 			<< "#4 Kupon Islemleri\n" 
 			<< "#5 Oda Islemleri\n"
 			<< "#6 Hizmet Bolumu\n" 
-			<< "#7 Personel Bolumu" << endl;
+			<< "#7 Personel Bolumu\n" 
+			<< "#8 Cikis Islemleri" << endl;
 		cout << "Yapmak istediginiz islemi seciniz: ";
 		cin >> islem;
 		switch(islem)
@@ -67,6 +70,9 @@ int main()
 			break;
 		case 7:
 			personel->personelMenu();
+			break;
+		case 8:
+			kisi->Cikis();
 			break;
 		default:
 			cout << "HATALI TUSLAMA" << endl;

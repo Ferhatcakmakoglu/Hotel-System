@@ -127,9 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ExceptionHandling.cpp" />
     <ClCompile Include="Hizmet.cpp" />
     <ClCompile Include="IslemGecmisi.cpp" />
-    <ClCompile Include="Kisi.cpp" />
+    <ClCompile Include="KisiIclal.cpp" />
     <ClCompile Include="Kupon.cpp" />
     <ClCompile Include="ListSakir.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -144,9 +145,10 @@
     <ClCompile Include="Turizm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ExceptionHandling.h" />
     <ClInclude Include="Hizmet.h" />
     <ClInclude Include="IslemGecmisi.h" />
-    <ClInclude Include="Kisi.h" />
+    <ClInclude Include="KisiIclal.h" />
     <ClInclude Include="Kupon.h" />
     <ClInclude Include="ListSakir.h" />
     <ClInclude Include="Muhasebe.h" />

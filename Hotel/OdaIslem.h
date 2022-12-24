@@ -2,6 +2,7 @@
 #include<fstream>
 #include<string>
 #include "Node.h"
+#include "ExceptionHandling.h"
 #ifndef ODAISLEM_H
 #define ODAISLEM_H
 using namespace std;
@@ -95,12 +96,43 @@ public:
 void OdaIslem::odaEkle()
 {
 	Oda* oda = new Oda(); //oda tanýmlama
+	ExceptionHandling* exc = new ExceptionHandling();
 	string tumOdalarUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Oda\\tumOdalar.txt";
 	
 	cout << "ODA NO: ";
 	cin >> oda->odaNo;
-	cout << "ODA TURU(A,B,C,VIP..): ";
-	cin >> oda->odaTuru;
+	
+	try
+	{
+		string kategori[] = {"A","B","C","VIP"};
+		int kategoriSayisi = 4,result = 0;
+		cout << "ODA TURU(A,B,C,VIP..): ";
+		cin >> oda->odaTuru;
+		for(int i=0;i<kategoriSayisi;i++)
+		{
+			if (oda->odaTuru == kategori[i])
+			{
+				result = 1;
+				break;
+			}
+		}
+
+		if(result != 1)
+		{
+			throw 1;
+		}
+	}
+	catch (int i)
+	{
+		if(i == 1)
+		{
+			exc->printNamingError("WrongRoomNaming");
+			cout << "Lutfen Odanizi Tekrar Olusturunuz!" << endl;
+			odaEkle();
+		}
+	}
+
+
 	cout << "KAPASITE: ";
 	cin >> oda->odaKisiKapasitesi;
 	cout << "GUNLUK FIYAT: ";
@@ -135,10 +167,11 @@ void OdaIslem::odaSil()
 {
 	int id;
 	tumOdalariListele();
-	cout << "Lutfen silmek istediginiz odanin solundaki no'yu giriniz";
+	cout << "Lutfen silmek istediginiz odanin solundaki no'yu giriniz: ";
 	cin >> id;
 
 	Node* oda = new Node();
+	ExceptionHandling* exc = new ExceptionHandling();
 	string line;
 	string tumOdalarUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Oda\\tumOdalar.txt";
 	ifstream read(tumOdalarUrl);
@@ -155,8 +188,22 @@ void OdaIslem::odaSil()
 	string silinecekOda = oda->getSilinecekData();
 	string silinecekData = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\Oda\\tumOdalar\\" + silinecekOda + ".txt";
 	
-	remove(tumOdalarUrl.c_str()); //dosyayi sildik
-	remove(silinecekData.c_str()); // bos odalardan odaNo.txt silindi
+	try
+	{
+		int res1 = remove(tumOdalarUrl.c_str()); //dosyayi sildik
+		int res2 = remove(silinecekData.c_str()); // bos odalardan odaNo.txt silindi
+		if((res1 != 0) || (res2 != 0))
+		{
+			throw 1;
+		}
+	}
+	catch (int i)
+	{
+		if(i == 1)
+		{
+			exc->printFileException("FileNotRemoved");
+		}
+	}
 	
 	oda->writeNodeToFile(oda, tumOdalarUrl); //tumOdaalr.txt ye tekrar yazdik
 	cout << "Oda silindi" << endl;
