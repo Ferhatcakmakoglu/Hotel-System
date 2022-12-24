@@ -7,6 +7,7 @@
 #include "Kupon.h"
 #include "OdaIslem.h"
 #include "Node.h"
+#include "Kisi.h"
 using namespace std;
 
 class AbsTurizm {
@@ -60,6 +61,8 @@ void Turizm::kuponIleRezervasyonIslemMenusu()
 {
 	OdaIslem* odaIslem = new OdaIslem();
 	Kupon* kupon = new Kupon();
+	Kisi* kisi = new Kisi();
+
 	int kuponSayisi = kupon->kuponSayisi;
 	string* kuponlar = new string[kuponSayisi];
 	string kuponAdi;
@@ -96,18 +99,52 @@ void Turizm::kuponIleRezervasyonIslemMenusu()
 	string odaNo;
 	cout << "Lutfen istediginiz odanin OdaNo'sunu yaziniz (orn: A-20): ";
 	cin >> odaNo;
-	rezerveEt(odaNo,indirim);
+	int index = odaNo.find("-");
+	string odaNoKategori = odaNo.substr(0,index); //0 dan index (:) e kadar yer yani kategori
+
+	int secim;
+	if (odaNoKategori._Equal("A"))
+		secim = 1;
+	else if (odaNoKategori._Equal("B"))
+		secim = 2;
+	else if (odaNoKategori._Equal("C"))
+		secim = 3;
+	else if (odaNoKategori._Equal("VIP"))
+		secim = 4;
+	else
+		secim = 9;
+
+	rezerveEt(odaNo,indirim); //ONCE ODA REZERVE EDEÝLDÝ
+	kisi->Giris(odaNo,secim); // ODADA KALACAKLARIN BÝLGÝLERÝNÝ ALMAK ÝCÝN KULLANILDI
 }
 
 void Turizm::kuponsuzRezervasyonIslemMenusu()
 {
 	OdaIslem* odaIslem = new OdaIslem();
+	Kisi* kisi = new Kisi();
+
 	odaIslem->bosOdaListele(); //bos odalar listelendi
 	string odaNo;
 	cout << "Lutfen istediginiz odanin OdaNo'sunu yaziniz (orn: A-20): ";
 	cin >> odaNo;
 
+	int index = odaNo.find("-");
+	string odaNoKategori = odaNo.substr(0, index); //0 dan index (:) e kadar yer yani kategori
+
+	int secim;
+	if (odaNoKategori._Equal("A"))
+		secim = 1;
+	else if (odaNoKategori._Equal("B"))
+		secim = 2;
+	else if (odaNoKategori._Equal("C"))
+		secim = 3;
+	else if (odaNoKategori._Equal("VIP"))
+		secim = 4;
+	else
+		secim = 9;
+
 	rezerveEt(odaNo, 0); 
+	kisi->Giris(odaNo, secim); // ODADA KALACAKLARIN BÝLGÝLERÝNÝ ALMAK ÝCÝN KULLANILDI
 }
 
 void Turizm::rezerveEt(string odaNo,int indirim)

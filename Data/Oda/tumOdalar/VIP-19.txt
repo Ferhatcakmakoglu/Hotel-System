@@ -7,3 +7,9 @@ DOLULUK :1
 TEMIZLIK:1
 ARA TEMIZLIK:0
 ---------------------------
+
+
+ASLAN --> [ 5412.000000TL]
+Islemi Gerceklestiren Kisinin ID'si: 6167
+ Islem Onaylandi | Islem Tarihi: Sat Dec 24 00:27:37 2022
+

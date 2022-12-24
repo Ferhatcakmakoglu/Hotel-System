@@ -6,6 +6,8 @@
 #include "OdaIslem.h"
 #include "Node.h"
 #include "IslemGecmisi.h"
+#include "Hizmet.h"
+#include "Personel.h"
 using namespace std;
 
 int main()
@@ -24,6 +26,9 @@ int main()
 	Muhasebe* muhasebe = new Muhasebe();
 	OdaIslem* odaIslem = new OdaIslem();
 	IslemGecmisi* islemGecmisi = new IslemGecmisi();
+	Hizmet* hizmet = new Hizmet();
+	Personel* personel = new Personel();
+	
 	string genelIslemGecmisiUrl = "C:\\Users\\Ferhat\\source\\repos\\c\\Hotel\\Data\\islemGecmisi.txt";
 
 	int islem;
@@ -35,7 +40,9 @@ int main()
 			<< "#2 Muhasebe Bolumu\n"
 			<< "#3 Islem Gecmisi\n" 
 			<< "#4 Kupon Islemleri\n" 
-			<< "#5 Oda Islemleri" << endl;
+			<< "#5 Oda Islemleri\n"
+			<< "#6 Hizmet Bolumu\n" 
+			<< "#7 Personel Bolumu" << endl;
 		cout << "Yapmak istediginiz islemi seciniz: ";
 		cin >> islem;
 		switch(islem)
@@ -54,6 +61,12 @@ int main()
 			break;
 		case 5:
 			odaIslem->odaIslemMenu();
+			break;
+		case 6:
+			hizmet->hizmetMenu();
+			break;
+		case 7:
+			personel->personelMenu();
 			break;
 		default:
 			cout << "HATALI TUSLAMA" << endl;

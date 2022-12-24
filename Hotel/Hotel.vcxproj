@@ -127,22 +127,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Hizmet.cpp" />
     <ClCompile Include="IslemGecmisi.cpp" />
+    <ClCompile Include="Kisi.cpp" />
     <ClCompile Include="Kupon.cpp" />
+    <ClCompile Include="ListSakir.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Muhasebe.cpp" />
     <ClCompile Include="Node.cpp" />
+    <ClCompile Include="NodeSakir.cpp" />
     <ClCompile Include="OdaIslem.cpp" />
     <ClCompile Include="OdaOlustur.cpp" />
+    <ClCompile Include="OdaServisi.cpp" />
+    <ClCompile Include="Personel.cpp" />
+    <ClCompile Include="Temizlik.cpp" />
     <ClCompile Include="Turizm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Hizmet.h" />
     <ClInclude Include="IslemGecmisi.h" />
+    <ClInclude Include="Kisi.h" />
     <ClInclude Include="Kupon.h" />
+    <ClInclude Include="ListSakir.h" />
     <ClInclude Include="Muhasebe.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="NodeSakir.h" />
     <ClInclude Include="OdaIslem.h" />
     <ClInclude Include="OdaOlustur.h" />
+    <ClInclude Include="OdaServisi.h" />
+    <ClInclude Include="Personel.h" />
+    <ClInclude Include="Temizlik.h" />
     <ClInclude Include="Turizm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

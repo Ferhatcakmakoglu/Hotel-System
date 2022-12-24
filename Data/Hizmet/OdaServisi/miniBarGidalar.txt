@@ -1,0 +1,7 @@
+
+Islemi Yapan Kisinin ID'si: 6167
+su Fiyati:45 | Islem Tarihi: Sat Dec 24 00:46:19 2022
+helva Fiyati:14 | Islem Tarihi: Sat Dec 24 00:46:19 2022
+
+Islemi Yapan Kisinin ID'si: 4545
+deneme Fiyati:0 | Islem Tarihi: Sat Dec 24 00:48:16 2022

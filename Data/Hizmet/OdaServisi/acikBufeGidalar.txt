@@ -1,0 +1,21 @@
+
+Islemi Yapan Kisinin ID'si: 6167
+ekmek | Islem Tarihi: Sat Dec 24 00:52:54 2022
+su | Islem Tarihi: Sat Dec 24 00:52:54 2022
+
+Islemi Yapan Kisinin ID'si: 6145
+deneme | Islem Tarihi: Sat Dec 24 00:55:11 2022
+
+Islemi Yapan Kisinin ID'si: 4545
+sonDeneme | Islem Tarihi: Sat Dec 24 00:56:33 2022
+
+Islemi Yapan Kisinin ID'si: 6745
+FerhatC | Islem Tarihi: Sat Dec 24 00:58:55 2022
+
+Islemi Yapan Kisinin ID'si: 4785
+
+Islemi Yapan Kisinin ID'si: 4444
+trab | Islem Tarihi: Sat Dec 24 01:01:40 2022
+
+Islemi Yapan Kisinin ID'si: 8585
+fero | Islem Tarihi: Sat Dec 24 01:02:30 2022

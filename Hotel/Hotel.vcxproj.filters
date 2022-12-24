@@ -39,6 +39,27 @@
     <ClCompile Include="IslemGecmisi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Hizmet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListSakir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeSakir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OdaServisi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Temizlik.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Personel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Kisi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Turizm.h">
@@ -60,6 +81,27 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IslemGecmisi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OdaServisi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hizmet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Temizlik.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListSakir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeSakir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Personel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Kisi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

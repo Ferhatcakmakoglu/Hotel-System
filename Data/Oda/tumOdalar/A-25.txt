@@ -7,3 +7,4 @@ DOLULUK :0
 TEMIZLIK:1
 ARA TEMIZLIK:0
 ---------------------------
+
